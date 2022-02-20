@@ -36,7 +36,7 @@ public class RestauranteRepositoryJPA implements RestauranteRepository{
 	@Override
 	@Transactional
 	public void remover(Restaurante restaurante) {
-		Restaurante removido = buscarPorId(1L);
+		Restaurante removido = buscarPorId(restaurante.getId());
 		entityManager.remove(removido);
 	}
 }
