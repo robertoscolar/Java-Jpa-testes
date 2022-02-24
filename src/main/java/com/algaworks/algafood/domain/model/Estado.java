@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-@Table
+@Table(name="estados")
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Data
 @Entity
