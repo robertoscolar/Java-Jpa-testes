@@ -20,7 +20,7 @@ public class RemoverCozinhaMain {
 		Cozinha cozinha = new Cozinha();
 		cozinha.setId(1L);
 		
-		cozinhaRepository.remover(cozinha); 
+		cozinhaRepository.remover(1L); 
 		
 	}
 }
