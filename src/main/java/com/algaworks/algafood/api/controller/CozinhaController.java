@@ -79,7 +79,7 @@ public class CozinhaController {
 //		cozinhaAtual.setNome(cozinha.getNome());
 		BeanUtils.copyProperties(cozinha, cozinhaAtual, "id"); //faz a mesma coisa que o de cima
 		
-		cozinhaAtual = cozinhaRepository.adicionar(cozinhaAtual);
+		cozinhaAtual = cadastroCozinha.adicionar(cozinhaAtual);
 		
 		return ResponseEntity.ok(cozinhaAtual);
 		}
